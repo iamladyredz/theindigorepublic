@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FAQ — The Indigo Republic</title>
+<meta name="description" content="Frequently asked questions about The Indigo Republic.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230a0a0f'/%3E%3Ctext x='50' y='68' font-size='60' text-anchor='middle' fill='%23ff6a1a' font-family='Arial'%3EI%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=League+Gothic:wght@400;700&family=Oswald:wght@400;500;600;700&family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css?v=4">
+<style>
+  .faq-head{padding:56px 0 8px; text-align:center;}
+  .faq-head h1{font-size:clamp(44px,8vw,80px);}
+  .faq-head p{color:var(--muted); margin-top:10px;}
+
+  .faq-tabs{display:flex; gap:28px; justify-content:center; flex-wrap:wrap; margin:36px 0 8px; border-bottom:1px solid var(--line); padding-bottom:14px;}
+  .faq-tabs button{
+    background:none; border:none; font-family:var(--font-body); font-size:13.5px; letter-spacing:.04em;
+    color:var(--muted); cursor:pointer; padding:4px 0;
+  }
+  .faq-tabs button.active{color:var(--ink); border-bottom:2px solid var(--accent); padding-bottom:12px;}
+
+  .faq-list{max-width:760px; margin:36px auto 0; display:none; flex-direction:column; gap:14px;}
+  .faq-list.active{display:flex;}
+  .faq-item{border:1px solid var(--line); border-radius:var(--radius); overflow:hidden;}
+  .faq-q{display:flex; align-items:center; gap:18px; width:100%; background:none; border:none; cursor:pointer; padding:18px 22px; text-align:left; font-family:var(--font-body);}
+  .faq-q .n{font-family:var(--font-display); color:#fff; background:#2f7d3c; width:34px; height:34px; border-radius:4px; display:flex; align-items:center; justify-content:center; font-size:13px; flex:none;}
+  .faq-q span.label{flex:1; font-size:15.5px; color:var(--ink);}
+  .faq-q .chev{transition:transform .25s var(--ease); color:var(--muted); flex:none;}
+  .faq-item.open .chev{transform:rotate(180deg);}
+  .faq-a{max-height:0; overflow:hidden; transition:max-height .35s var(--ease);}
+  .faq-item.open .faq-a{max-height:1200px;}
+  .faq-a-inner{padding:0 22px 20px 74px; font-size:14px; line-height:1.75; color:var(--muted); white-space:pre-line;}
+
+  .faq-cta{text-align:center; margin:56px 0 70px;}
+
+  .page-footer{padding:28px 0; text-align:center; font-size:13px; color:var(--muted);}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="bar">
+    <a href="index.html" class="wordmark">The Indigo<span class="dot">.</span>Republic</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="video.html">Video</a></li>
+        <li><a href="photography.html">Photography</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="header-cta">Let's talk</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+
+  <section class="section-light faq-head">
+    <div class="container">
+      <h1>FAQ</h1>
+      <p>Frequently Asked Questions</p>
+    </div>
+  </section>
+
+  <section class="section-light">
+    <div class="container">
+      <div class="faq-tabs">
+        <button class="active" data-tab="about">About</button>
+        <button data-tab="services">Services</button>
+        <button data-tab="process">Process</button>
+        <button data-tab="contact">Contact</button>
+        <button data-tab="partnership">Partnership</button>
+      </div>
+
+      <!-- ABOUT -->
+      <div class="faq-list active" data-panel="about">
+        <div class="faq-item">
+          <button class="faq-q" type="button"><span class="n">01</span><span class="label">What is Indigo Republic?</span><span class="chev">&#9660;</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Indigo Republic is an award-winning video production studio that creates cinematic content for brands, agencies, and creators. We specialize in commercials, branded storytelling, documentaries, music visuals, and narrative film&mdash;blending high-end aesthetics with strategic messaging.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button"><span class="n">02</span><span class="label">Who are your typical clients?</span><span class="chev">&#9660;</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Our clients range from national brands and creative agencies to independent artists, nonprofit organizations, and educational institutions. We work with anyone who values cinematic storytelling and wants to elevate their visual impact.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button"><span class="n">03</span><span class="label">What sets Indigo Republic apart from other production companies?</span><span class="chev">&#9660;</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Indigo Republic combines award-level storytelling, production infrastructure, and music industry expertise to deliver projects that are both creatively rich and operationally sound.
+
+Award-Level Experience: Our team has contributed to projects honored by the Grammys, Telly Awards, and recognized by major film festivals. We also work closely with collaborators whose credits include Emmy-winning productions, giving our clients access to elevated creative and technical talent.
+
+Multi-Platform Production Strategy: We develop content specifically for its platform&mdash;whether it's YouTube, broadcast, Instagram, streaming, or live events&mdash;ensuring every project meets the unique needs of its audience and format.
+
+Robust Contractor Network: We maintain a national network of trusted contractors&mdash;from cinematographers and editors to drone operators and live stream technicians. This allows us to staff projects of any scale, anywhere in the U.S., with consistency and quality.
+
+Rooted in Music + Creative Consulting: With a background in music video direction, major label consulting, and artist campaign development, we've helped shape content strategies for emerging artists, booked international press tours, and built visual brands for independent and mainstream acts alike.
+
+Storytelling with Cultural Purpose: We specialize in narrative-driven, socially conscious content. Whether for nonprofits, artists, or brand campaigns, our focus is on underrepresented stories and work that drives impact.
+
+Our approach blends the flexibility of an independent studio with the production standards and industry access of a larger firm&mdash;built for teams who want both creativity and execution.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button"><span class="n">04</span><span class="label">What industries do you specialize in?</span><span class="chev">&#9660;</span></button>
+          <div class="faq-a"><div class="faq-a-inner">While we serve a broad range of industries, our strongest impact and strategic value are found in:
+
+Corporate, B2B, and Trade Shows &mdash; producing internal training content, executive interviews, branded case studies, and multi-day convention or expo coverage, including livestreaming and post-event recaps
+
+Luxury Events &amp; Weddings &mdash; offering cinematic documentation and creative direction for high-profile personal or branded experiences
+
+Nonprofit &amp; Advocacy Storytelling &mdash; creating grant-ready, donor-engaging video narratives that elevate causes and impact reports
+
+Youth &amp; Education Media &mdash; building trust-driven content that supports curriculum design, outreach initiatives, and educational programs
+
+Fashion &amp; Lifestyle &mdash; delivering high-production visuals that boost brand identity across e-commerce, influencer partnerships, and editorial
+
+Food &amp; Beverage &mdash; crafting digital-first content that drives appetite appeal, product storytelling, and customer engagement
+
+Music &amp; Performing Arts &mdash; developing campaign visuals, music videos, and branded content for artists, labels, and live performances
+
+We combine artistic storytelling with strategic production planning&mdash;making us a powerful creative partner for businesses, agencies, events, and mission-driven organizations alike.</div></div>
+        </div>
+      </div>
+
+      <!-- SERVICES -->
+      <div class="faq-list" data-panel="services">
+        <div class="faq-item">
+          <button class="faq-q" type="button"><span class="n">01</span><span class="label">What services do you offer?</span><span class="chev">&#9660;</span></button>
+          <div class="faq-a"><div class="faq-a-inner">We provide full-service video production, including:
+
+Wedding and Event Photography and Videography
+Headshot and Brand Photography
+Commercial Production
+Documentary Production
+Concept development &amp; scripting
+Casting, location scouting &amp; crew staffing
+Cinematography &amp; directing
+Post-production (editing, color grading, sound design)
+Animation &amp; motion graphics
+Social media content &amp; campaign strategy
+Studio rentals &amp; branded content consulting</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button"><span class="n">02</span><span class="label">Do you offer video production for weddings?</span><span class="chev">&#9660;</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Yes! Through Indigo Republic Weddings, we bring our cinematic approach to love stories. We capture weddings, elopements, and celebrations with the same creative excellence as our commercial work&mdash;without the inflated price tag of luxury wedding vendors.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button"><span class="n">03</span><span class="label">Can you create content without filming, using AI or stock?</span><span class="chev">&#9660;</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Yes. We create high-quality "faceless" and hybrid content through a thoughtful, artist-led process that blends AI with intentional design. Our internal team brings a fine arts background, allowing us to guide these tools with a creative eye and narrative clarity.
+
+Our approach includes:
+Curated stock footage + AI voiceovers
+Text-to-video storytelling
+AI-assisted editing workflows
+Custom motion graphics and explainer animations
+
+Because we understand prompt engineering as a creative craft, we're able to direct AI tools in ways that reflect your brand's tone and story&mdash;not just automate output.
+
+This is an ideal solution for projects with tight timelines, remote production needs, or budget-conscious campaigns where quality still matters.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button"><span class="n">04</span><span class="label">Where is Indigo Republic based? Do you travel?</span><span class="chev">&#9660;</span></button>
+          <div class="faq-a"><div class="faq-a-inner">We're based in Maryland, servicing the DC, Maryland, and Virginia region, with proven production experience in Georgia, Florida, Texas, and Los Angeles. Our nationwide crew network allows us to scale efficiently for both local and destination shoots. We're also available for travel across the U.S. and internationally, with flexible, mobile-ready production capabilities.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button"><span class="n">05</span><span class="label">Do you offer consulting or creative direction for brands?</span><span class="chev">&#9660;</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Yes. In addition to production, we offer creative and strategic consulting grounded in real-world experience across media, music, and storytelling. Our consulting is included free with all retainer agreements, or available as a standalone service starting at $50&ndash;$150 per session, depending on the topic.
+
+We consult in areas such as:
+Campaign and brand storytelling strategy
+Storyboarding, scripting, and creative development
+Content audits and performance-based direction
+YouTube, TikTok, and multi-platform launch planning
+Artist branding and visual identity
+Music video production and creative alignment
+Media prep, pitch deck development, and press strategy
+Nonprofit and social impact content campaigns
+AI workflows and automation solutions for creatives and businesses
+Licensing, permitting, and business setup for creative production
+Corporate training programs and educational content design
+
+With a background in major label consulting, international press tours, and tour media, we bring a grounded, creative perspective to every session&mdash;tailored to your goals and your audience.
+
+Contact us through the form or email us directly at info@theindigorepublic.com to get started.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button"><span class="n">06</span><span class="label">Do you offer retainer packages or ongoing content creation?</span><span class="chev">&#9660;</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Yes! We offer flexible monthly and quarterly retainers for brands, influencers, and agencies that need consistent, high-quality content across platforms.
+
+Our retainer packages are ideal for social-first campaigns, fast-moving brands, or organizations that want to build momentum over time&mdash;without starting from scratch each month. Depending on your goals, retainers can include:
+
+Regularly scheduled video shoots (on-location or remote-directed)
+Batch content planning sessions to align messaging and visuals across formats
+Editing and delivery tailored for multiple platforms (Instagram, TikTok, YouTube, etc.)
+Creative direction and scripting to support campaigns or product launches
+AI-enhanced content workflows for faster editing, voiceovers, and motion graphics
+Process automation using platforms like Make.com to streamline asset delivery, content scheduling, and approval workflows
+Analytics review and content performance audits to guide future shoots
+Ongoing consulting on trends, brand voice, and platform strategies
+Optional add-ons: graphic design, livestream setup, branded templates, or short-form AI-assisted content
+
+Each retainer is customized to fit your timeline, volume needs, and budget. Whether you're building an audience, supporting a product launch, or managing an evolving brand presence, we help you stay consistent, creative, and systematized.
+
+Ready to build a system that grows with you? Contact us through the form or email info@theindigorepublic.com to get started.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button"><span class="n">07</span><span class="label">Do you offer training, workshops, or brand consultations?</span><span class="chev">&#9660;</span></button>
+          <div class="faq-a"><div class="faq-a-inner">We love teaching! We offer:
+
+Content Strategy Bootcamps for startups and nonprofits
+DIY Video Workshops for teams looking to improve in-house production
+Creative Direction Intensives for agencies and creators
+
+These sessions are tailored, hands-on, and can be delivered virtually or in-person.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button"><span class="n">08</span><span class="label">Do you offer behind-the-scenes or docu-style brand storytelling?</span><span class="chev">&#9660;</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Absolutely. We specialize in authentic, narrative-driven brand films. If you want to tell your origin story, showcase team culture, or document a mission-driven initiative, we'll help you do it with cinematic clarity and emotional impact.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button"><span class="n">09</span><span class="label">Can you help with podcast production or short-form audio content?</span><span class="chev">&#9660;</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Yes&mdash;we offer audio capture, editing, and branded sound design for podcasts, interviews, and web shows. We can also produce faceless reels with audio-forward storytelling.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button"><span class="n">10</span><span class="label">Can you help with casting talent or finding voiceover artists?</span><span class="chev">&#9660;</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Yes. We handle casting for on-camera talent, voiceovers, and background extras through our network of actors, artists, and voice professionals. We also offer inclusive casting services, ensuring your brand reflects real-world diversity.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button"><span class="n">11</span><span class="label">Do you offer drone video services?</span><span class="chev">&#9660;</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Yes, we have licensed drone operators who can capture cinematic aerial shots for real estate, events, travel campaigns, and commercial productions. Drone footage adds a dynamic layer of production value.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button"><span class="n">12</span><span class="label">Can you build a visual brand identity with video and design?</span><span class="chev">&#9660;</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Yes! We help develop visual storytelling packages including video branding, motion graphics, logo animations, color palettes, and typography direction. Ideal for emerging brands or rebrands looking for consistency across media.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button"><span class="n">13</span><span class="label">Can you help manage my YouTube or social media channels?</span><span class="chev">&#9660;</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Absolutely. We offer end-to-end content management services tailored for creators, brands, and agencies who want to stay focused on growth, visibility, and creativity&mdash;while we handle the technical and strategic backend.
+
+Our channel management services can include:
+Upload scheduling and platform optimization (YouTube, TikTok, Instagram, etc.)
+Custom thumbnail design and title strategy to boost click-through rates
+Channel audits to assess performance, engagement, and alignment with goals
+Content tagging, SEO keywords, and playlist curation
+Basic to advanced analytics reporting with actionable insights
+Content repurposing and post automation across platforms
+Creative testing of formats, thumbnails, and captions for performance growth
+Light community management (comment moderation, viewer interaction strategy)
+
+This is perfect for brands and creators who want consistency and polish, but don't have the bandwidth to manage the daily grind of uploads, engagement, and optimization. Whether you're launching a new channel or scaling an existing one, our team ensures everything runs smoothly behind the scenes&mdash;while your content stays front and center.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button"><span class="n">14</span><span class="label">Do you offer same-day or rush delivery?</span><span class="chev">&#9660;</span></button>
+          <div class="faq-a"><div class="faq-a-inner">We understand some projects have tight turnarounds. We offer rush delivery options depending on crew availability and scope. Additional fees may apply, but we'll always be transparent and flexible.</div></div>
+        </div>
+      </div>
+
+      <!-- PROCESS -->
+      <div class="faq-list" data-panel="process">
+        <div class="faq-item">
+          <button class="faq-q" type="button"><span class="n">01</span><span class="label">What is your process for starting a project?</span><span class="chev">&#9660;</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Discovery Call &ndash; We discuss your goals, audience, and vision.
+Proposal &amp; Timeline &ndash; You receive a custom plan with scope, deliverables, and cost.
+Pre-Production &ndash; We handle casting, logistics, and scheduling.
+Production &amp; Post &ndash; We film and edit your content with ongoing feedback.
+Delivery &amp; Optimization &ndash; You receive finalized assets, formatted for each platform.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button"><span class="n">02</span><span class="label">How much does a typical video project cost?</span><span class="chev">&#9660;</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Project costs vary depending on scope, style, and complexity. We work with a wide range of budgets&mdash;from lean social media content to multi-day commercial shoots. Custom quotes are provided after your discovery session.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button"><span class="n">03</span><span class="label">Can I license or repurpose my video content later?</span><span class="chev">&#9660;</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Absolutely. We structure all our projects to ensure you have the usage rights you need. You can repurpose footage for ads, social clips, behind-the-scenes reels, or future edits. We also offer clip library organization so your team can reuse assets efficiently.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button"><span class="n">04</span><span class="label">Can you help me plan a full campaign, not just one video?</span><span class="chev">&#9660;</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Yes. Our team has experience with full campaign builds&mdash;from concept to rollout. We can handle content strategy, platform planning, video sequences, and creative asset bundles. This is especially helpful for product launches, tours, and fundraising campaigns.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button"><span class="n">05</span><span class="label">Can you collaborate with my in-house marketing or creative team?</span><span class="chev">&#9660;</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Absolutely. We frequently partner with in-house teams, ad agencies, and freelancers. We can integrate into existing workflows or lead full production&mdash;whatever supports your goals best.</div></div>
+        </div>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="faq-list" data-panel="contact">
+        <div class="faq-item">
+          <button class="faq-q" type="button"><span class="n">01</span><span class="label">How do I book a project or consultation?</span><span class="chev">&#9660;</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Use our contact form, or email us directly at info@theindigorepublic.com. We typically respond within 24 hours and offer complimentary 15-minute discovery calls for new clients.</div></div>
+        </div>
+      </div>
+
+      <!-- PARTNERSHIP -->
+      <div class="faq-list" data-panel="partnership">
+        <div class="faq-item">
+          <button class="faq-q" type="button"><span class="n">01</span><span class="label">Can I license Indigo Republic content or partner on creative projects?</span><span class="chev">&#9660;</span></button>
+          <div class="faq-a"><div class="faq-a-inner">We're open to co-creative partnerships, experimental media projects, and collaborative campaigns that align with our mission. If you're a nonprofit, artist, or platform with a big vision, let's talk.
+
+Email us at Support@theindigorepublic.com, subject line "Partnerships."</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button"><span class="n">02</span><span class="label">&#129309; What kinds of partnerships do you consider?</span><span class="chev">&#9660;</span></button>
+          <div class="faq-a"><div class="faq-a-inner">We welcome strategic and creative partnerships that align with our values and visual expertise. Based on our past and current work, here are ways we can collaborate:
+
+Documentary Collaborations &mdash; Partnering on development, co-direction, or visual treatment for mission-driven or cultural storytelling
+AI-Enhanced Creative Projects &mdash; Working with technologists, artists, or brands on experiments in synthetic media, animation, or new storytelling workflows
+Nonprofit + Cause Campaigns &mdash; Content production or storytelling consulting for advocacy organizations, grant-funded initiatives, or impact reports
+Music &amp; Performance Projects &mdash; Visual direction, live show visuals, or music video co-productions with independent or label-backed artists
+Exhibition or Festival Installations &mdash; Producing branded or immersive content for physical spaces or event showcases
+Education &amp; Workforce Development &mdash; Contributing media components, curriculum-aligned videos, or hands-on instruction to creative youth or adult training programs
+Cultural &amp; Community Content Labs &mdash; Co-producing short-form or experimental video content with community organizations or creative incubators
+Platform Partnerships &mdash; Providing branded visual content for digital publishers, arts platforms, or educational tools
+
+If you're building something that intersects with storytelling, technology, or social impact, we'd love to explore how our team can contribute visually or structurally.
+
+Let's talk: Support@theindigorepublic.com</div></div>
+        </div>
+      </div>
+
+      <div class="faq-cta">
+        <a href="contact.html" class="btn-wix-orange">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="page-footer">&copy; <span id="year"></span> by Indigo Republic Films</footer>
+
+</main>
+
+<div id="preview-card"><div class="art"></div><div class="label"></div></div>
+<script src="assets/js/main.js"></script>
+<script>
+  document.querySelectorAll('.faq-q').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      btn.parentElement.classList.toggle('open');
+    });
+  });
+  document.querySelectorAll('.faq-tabs button').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      document.querySelectorAll('.faq-tabs button').forEach(function(b){ b.classList.remove('active'); });
+      document.querySelectorAll('.faq-list').forEach(function(p){ p.classList.remove('active'); });
+      btn.classList.add('active');
+      document.querySelector('.faq-list[data-panel="' + btn.dataset.tab + '"]').classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>

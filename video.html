@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Video — The Indigo Republic</title>
+<meta name="description" content="Music videos, event coverage, commercials, and visualizers from The Indigo Republic.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230a0a0f'/%3E%3Ctext x='50' y='68' font-size='60' text-anchor='middle' fill='%23ff6a1a' font-family='Arial'%3EI%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=League+Gothic:wght@400;700&family=Oswald:wght@400;500;600;700&family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css?v=4">
+<style>
+  .reel-hero{position:relative; height:clamp(340px,52vw,520px); overflow:hidden; background:#0c0c10;}
+  .reel-hero-video{position:absolute; inset:0; width:100%; height:100%; object-fit:cover;}
+  .reel-hero-scrim{position:absolute; inset:0; background:linear-gradient(0deg, oklch(0 0 0/55%), oklch(0 0 0/15%) 55%);}
+  .reel-hero-copy{position:absolute; inset:0; display:flex; align-items:center; justify-content:center; text-align:center; z-index:1;}
+  .reel-hero h1{color:#fff; font-size:clamp(30px,5vw,56px); letter-spacing:.02em;}
+
+  .video-section{padding:64px 0;}
+  .video-section + .video-section{border-top:1px solid var(--line);}
+  .video-section-head{display:grid; grid-template-columns:1fr 1.4fr; gap:32px; align-items:start; margin-bottom:36px;}
+  .video-section-head h2{font-size:clamp(26px,4vw,38px);}
+  .video-section-head .kicker{color:var(--accent); font-size:12px; letter-spacing:.1em; text-transform:uppercase; display:block; margin-bottom:8px;}
+  .video-section-head p{color:var(--muted); font-size:14.5px; line-height:1.7;}
+  @media (max-width:720px){ .video-section-head{grid-template-columns:1fr;} }
+
+  .video-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
+  @media (max-width:860px){ .video-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:520px){ .video-grid{grid-template-columns:1fr;} }
+  .video-tile{position:relative; display:block; border-radius:var(--radius); overflow:hidden; aspect-ratio:16/9; background:#111;}
+  .video-tile img{width:100%; height:100%; object-fit:cover; display:block; transition:transform .4s var(--ease);}
+  .video-tile:hover img{transform:scale(1.04);}
+  .video-tile .play-dot{position:absolute; inset:0; display:flex; align-items:center; justify-content:center;}
+  .video-tile .play-dot span{width:44px; height:44px; border-radius:50%; background:oklch(0 0 0/45%); border:1.5px solid #fff; display:flex; align-items:center; justify-content:center;}
+  .video-tile .play-dot svg{width:14px; height:14px; fill:#fff; margin-left:2px;}
+  .video-tile .cap{position:absolute; left:0; right:0; bottom:0; padding:10px 12px; font-size:12.5px; color:#fff; background:linear-gradient(0deg, oklch(0 0 0/75%), transparent); text-align:left;}
+  .video-tile.static{cursor:default;}
+  .video-tile.static .play-dot{display:none;}
+  .video-tile.static::after{content:"Needs source file"; position:absolute; top:8px; right:8px; font-size:10px; letter-spacing:.04em; color:oklch(1 0 0/70%); background:oklch(0 0 0/55%); padding:3px 7px; border-radius:3px;}
+
+  .page-footer{padding:28px 0; text-align:center; font-size:13px; color:var(--muted);}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="bar">
+    <a href="index.html" class="wordmark">The Indigo<span class="dot">.</span>Republic</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="video.html" aria-current="page">Video</a></li>
+        <li><a href="photography.html">Photography</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="header-cta">Let's talk</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+
+  <section class="reel-hero">
+    <video class="reel-hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/images/site/hero-bg-poster.jpg">
+      <source src="assets/video/hero-bg.mp4" type="video/mp4">
+    </video>
+    <div class="reel-hero-scrim"></div>
+    <div class="reel-hero-copy">
+      <h1>Indigo 2020 Reel</h1>
+    </div>
+  </section>
+
+  <section class="section-light video-section">
+    <div class="container">
+      <div class="video-section-head">
+        <div><span class="kicker">Concepts / Cinematography / Marketing</span><h2>Music Videos</h2></div>
+        <p>We can help you shed light on your brand and persona so you can find the audience that truly identifies with you. We can even help you maximize exposure through TV placements, blogs, captioning in different languages, and more.</p>
+      </div>
+      <div class="video-grid">
+        <a class="video-tile" href="https://youtu.be/ZtSjPp3q_iw" target="_blank" rel="noopener">
+          <img src="https://i.ytimg.com/vi/ZtSjPp3q_iw/maxresdefault.jpg" alt="Crashing Atlas - Graveyard (Official Music Video)" loading="lazy">
+          <div class="play-dot"><span><svg viewBox="0 0 24 24"><path d="M5 3l16 9-16 9V3z"/></svg></span></div>
+          <div class="cap">Crashing Atlas &mdash; Graveyard</div>
+        </a>
+        <a class="video-tile" href="https://youtu.be/4z3GTWI06Ps" target="_blank" rel="noopener">
+          <img src="https://i.ytimg.com/vi/4z3GTWI06Ps/maxresdefault.jpg" alt="Layla Khepri - Merchy (Official Video)" loading="lazy">
+          <div class="play-dot"><span><svg viewBox="0 0 24 24"><path d="M5 3l16 9-16 9V3z"/></svg></span></div>
+          <div class="cap">Layla Khepri &mdash; Merchy</div>
+        </a>
+        <a class="video-tile" href="https://youtu.be/Tq--N5RCGew" target="_blank" rel="noopener">
+          <img src="https://i.ytimg.com/vi/Tq--N5RCGew/maxresdefault.jpg" alt="LX - Drunken Depression II (Official Video)" loading="lazy">
+          <div class="play-dot"><span><svg viewBox="0 0 24 24"><path d="M5 3l16 9-16 9V3z"/></svg></span></div>
+          <div class="cap">LX &mdash; Drunken Depression II</div>
+        </a>
+        <a class="video-tile" href="https://youtu.be/NVZ45Kjq3C4" target="_blank" rel="noopener">
+          <img src="https://i.ytimg.com/vi/NVZ45Kjq3C4/sddefault.jpg" alt="Allen Neal - Hope For Rain (Official Music Video)" loading="lazy">
+          <div class="play-dot"><span><svg viewBox="0 0 24 24"><path d="M5 3l16 9-16 9V3z"/></svg></span></div>
+          <div class="cap">Allen Neal &mdash; Hope For Rain</div>
+        </a>
+        <a class="video-tile" href="https://youtu.be/Sg-2zENYcNo" target="_blank" rel="noopener">
+          <img src="https://i.ytimg.com/vi/Sg-2zENYcNo/maxresdefault.jpg" alt="Layla Khepri - K.O.T.G (Official Video)" loading="lazy">
+          <div class="play-dot"><span><svg viewBox="0 0 24 24"><path d="M5 3l16 9-16 9V3z"/></svg></span></div>
+          <div class="cap">Layla Khepri &mdash; K.O.T.G</div>
+        </a>
+        <a class="video-tile" href="https://youtu.be/ViMW7ZytdSI" target="_blank" rel="noopener">
+          <img src="https://i.ytimg.com/vi/ViMW7ZytdSI/sddefault.jpg" alt="Crashing Atlas - Monster (Official Music Video)" loading="lazy">
+          <div class="play-dot"><span><svg viewBox="0 0 24 24"><path d="M5 3l16 9-16 9V3z"/></svg></span></div>
+          <div class="cap">Crashing Atlas &mdash; Monster</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-light video-section">
+    <div class="container">
+      <div class="video-section-head">
+        <div><span class="kicker">Events / Promos / Commercials</span><h2>Basic Coverage.</h2></div>
+        <p>Immortalize moments, capture new clients, or create a monetizable video product. We can even assist with ideas, scripts, voice-overs, and jingles.</p>
+      </div>
+      <div class="video-grid">
+        <a class="video-tile" href="https://youtu.be/VdQZpNNbxY4" target="_blank" rel="noopener">
+          <img src="https://i.ytimg.com/vi/VdQZpNNbxY4/maxresdefault.jpg" alt="Lorna Shore Flesh Coffin Commercial" loading="lazy">
+          <div class="play-dot"><span><svg viewBox="0 0 24 24"><path d="M5 3l16 9-16 9V3z"/></svg></span></div>
+          <div class="cap">Lorna Shore &mdash; "Flesh Coffin" Commercial</div>
+        </a>
+        <div class="video-tile static">
+          <img src="assets/images/site/thumb-wedding-highlights.jpg" alt="Wedding Highlights" loading="lazy">
+          <div class="cap">Wedding Highlights</div>
+        </div>
+        <div class="video-tile static">
+          <img src="assets/images/site/thumb-herbal-kitchen.jpg" alt="Herbal Kitchen Promo" loading="lazy">
+          <div class="cap">Herbal Kitchen Promo</div>
+        </div>
+        <div class="video-tile static">
+          <img src="assets/images/site/thumb-real-estate.jpg" alt="Indigo Real Estate Commercial" loading="lazy">
+          <div class="cap">Indigo Real Estate Commercial</div>
+        </div>
+        <div class="video-tile static">
+          <img src="assets/images/site/thumb-friends-parody.jpg" alt="Friends Parody Sizzle Reel" loading="lazy">
+          <div class="cap">Friends Parody Sizzle Reel</div>
+        </div>
+        <div class="video-tile static">
+          <img src="assets/images/site/thumb-wgc-shoot.jpg" alt="WGC Shoot" loading="lazy">
+          <div class="cap">WGC Shoot</div>
+        </div>
+        <div class="video-tile static">
+          <img src="assets/images/site/thumb-pig-destroyer.jpg" alt="Pig Destroyer — Metal Sucks" loading="lazy">
+          <div class="cap">Pig Destroyer &mdash; Metal Sucks</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-light video-section">
+    <div class="container">
+      <div class="video-section-head">
+        <div><span class="kicker">Powerful Visuals Without a Shoot</span><h2>Visualizers</h2></div>
+        <p>A great option for brands that need constant impactful content, but don't have the time or budget to shoot.</p>
+      </div>
+      <div class="video-grid">
+        <div class="video-tile static">
+          <img src="assets/images/site/thumb-outerloop.jpg" alt="Outerloop Coaching Ad" loading="lazy">
+          <div class="cap">Outerloop Coaching Ad</div>
+        </div>
+        <div class="video-tile static">
+          <img src="assets/images/site/thumb-merch-promo.jpg" alt="Merch Promo — Layla" loading="lazy">
+          <div class="cap">Merch Promo &mdash; Layla</div>
+        </div>
+        <div class="video-tile static">
+          <img src="assets/images/site/thumb-gaming-promo.jpg" alt="Indigo 22 Gaming Promo" loading="lazy">
+          <div class="cap">Indigo 22 Gaming Promo</div>
+        </div>
+        <div class="video-tile static">
+          <img src="assets/images/site/thumb-musicianship.jpg" alt="Musicianship Promo" loading="lazy">
+          <div class="cap">Musicianship Promo</div>
+        </div>
+        <div class="video-tile static">
+          <img src="assets/images/site/thumb-1111-promo.jpg" alt="Indigo 1111 Promo Video" loading="lazy">
+          <div class="cap">Indigo 1111 Promo Video</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="page-footer">&copy; <span id="year"></span> by Indigo Republic Films</footer>
+
+</main>
+
+<div id="preview-card"><div class="art"></div><div class="label"></div></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Services — The Indigo Republic</title>
+<meta name="description" content="What we offer — video production, casting, photography, film production, live streaming, scripts, post-production, and art direction.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230a0a0f'/%3E%3Ctext x='50' y='68' font-size='60' text-anchor='middle' fill='%23ff6a1a' font-family='Arial'%3EI%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=League+Gothic:wght@400;700&family=Oswald:wght@400;500;600;700&family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css?v=4">
+<style>
+  .page-banner{position:relative; height:260px; overflow:hidden; display:flex; align-items:flex-end;}
+  .page-banner img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; filter:grayscale(1) brightness(.55);}
+  .page-banner .inner{position:relative; z-index:1; padding:0 0 28px;}
+  .page-banner h1{font-size:clamp(40px,7vw,72px); color:#fff; line-height:1;}
+  .page-banner .crumb{color:oklch(1 0 0/70%); font-size:13px; letter-spacing:.06em; margin-top:10px;}
+  .page-banner .crumb a{color:inherit;}
+
+  .svc-offer{padding-top:60px;}
+  .svc-offer-head{display:grid; grid-template-columns:1fr 1.3fr; gap:40px; align-items:start; margin-bottom:56px;}
+  .svc-offer-head .eyebrow{color:var(--accent);}
+  .svc-offer-head h2{font-size:clamp(26px,4vw,38px); margin-top:10px;}
+  .svc-offer-head p{color:var(--muted); font-size:15px; line-height:1.75; margin-top:6px;}
+  @media (max-width:720px){ .svc-offer-head{grid-template-columns:1fr;} }
+
+  .svc-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:40px 32px;}
+  @media (max-width:860px){ .svc-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:520px){ .svc-grid{grid-template-columns:1fr;} }
+  .svc-card img{width:50px; height:50px; object-fit:contain; margin-bottom:16px;}
+  .svc-card h3{font-size:15px; letter-spacing:.04em; text-transform:uppercase; margin-bottom:10px;}
+  .svc-card p{font-size:14px; line-height:1.65; color:var(--muted);}
+
+  .collab-band{position:relative; overflow:hidden; padding:70px 0;}
+  .collab-band img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; filter:grayscale(1) brightness(.4);}
+  .collab-band .container{position:relative; z-index:1; display:grid; grid-template-columns:1fr 1.4fr; gap:40px; align-items:center;}
+  .collab-faq a{display:block; font-family:var(--font-display); font-weight:400; font-size:clamp(44px,7vw,80px); color:#fff; line-height:.9; text-decoration:none;}
+  .collab-faq .hint{display:block; font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:oklch(1 0 0/70%); margin-bottom:10px; text-decoration:underline;}
+  .collab-copy h2{color:#fff; font-size:clamp(22px,3vw,30px); line-height:1.3; margin-bottom:26px;}
+  .collab-actions{display:flex; gap:14px; flex-wrap:wrap;}
+  @media (max-width:760px){ .collab-band .container{grid-template-columns:1fr;} }
+
+  .page-footer{padding:28px 0; text-align:center; font-size:13px; color:var(--muted);}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="bar">
+    <a href="index.html" class="wordmark">The Indigo<span class="dot">.</span>Republic</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" aria-current="page">Our Services</a></li>
+        <li><a href="video.html">Video</a></li>
+        <li><a href="photography.html">Photography</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="header-cta">Let's talk</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-banner">
+    <img src="assets/images/site/services-banner.jpg" alt="" loading="lazy">
+    <div class="container inner">
+      <h1>Services</h1>
+      <p class="crumb"><a href="index.html">Home</a> &middot; <a href="contact.html">Contact</a></p>
+    </div>
+  </section>
+
+  <section class="section-light svc-offer">
+    <div class="container">
+      <div class="svc-offer-head">
+        <div>
+          <p class="eyebrow">What We Offer</p>
+          <h2>We've got all your production needs covered.</h2>
+        </div>
+        <p>At Indigo Republic, we offer a comprehensive suite of services to meet your creative needs. From initial idea development and scriptwriting to casting, filming, and post-production, we've got you covered.</p>
+      </div>
+
+      <div class="svc-grid">
+        <div class="svc-card">
+          <img src="assets/images/site/icon-weddings-events.png" alt="Weddings and events icon" loading="lazy">
+          <h3>Weddings &amp; Events</h3>
+          <p>Capture the essence of your special day with our premium photography and videography services, designed for weddings and events that deserve to be remembered.</p>
+        </div>
+        <div class="svc-card">
+          <img src="assets/images/site/icon-casting.png" alt="Casting icon" loading="lazy">
+          <h3>Casting</h3>
+          <p>Our dedicated casting team streamlines your talent search by posting calls, conducting auditions, reviewing tapes, and making final selections. Your vision, perfectly cast.</p>
+        </div>
+        <div class="svc-card">
+          <img src="assets/images/site/icon-photography.png" alt="Photography icon" loading="lazy">
+          <h3>Photography</h3>
+          <p>Whether it's graduations, birthdays, engagements, or professional headshots, our photography service is ready to capture each significant moment in your life.</p>
+        </div>
+        <div class="svc-card">
+          <img src="assets/images/site/icon-video-production.png" alt="Video production icon" loading="lazy">
+          <h3>Video Production</h3>
+          <p>From music videos to commercials, and from short films to feature-length productions, we cater to all your video needs comprehensively!</p>
+        </div>
+        <div class="svc-card">
+          <img src="assets/images/site/icon-film-production.png" alt="Film production icon" loading="lazy">
+          <h3>Film Production</h3>
+          <p>From pre-production to post-production, we offer full-service solutions or crew support for films of any scale.</p>
+        </div>
+        <div class="svc-card">
+          <img src="assets/images/site/icon-livestream.png" alt="Live streaming icon" loading="lazy">
+          <h3>Live Streaming</h3>
+          <p>Ready to broadcast your event in real time, our live stream team offers customizable one or multi-camera setups to perfectly capture the moment.</p>
+        </div>
+        <div class="svc-card">
+          <img src="assets/images/site/icon-ideas-scripts.png" alt="Ideas and scripts icon" loading="lazy">
+          <h3>Ideas &amp; Scripts</h3>
+          <p>If you have an idea you'd like to see come to life, our writing team is here to help. We take great care in crafting scripts that align closely with your vision. Your thoughts, meticulously scripted.</p>
+        </div>
+        <div class="svc-card">
+          <img src="assets/images/site/icon-post-production.png" alt="Post production icon" loading="lazy">
+          <h3>Post Production</h3>
+          <p>From editing and mixing to mastering, color grading, and post supervision, our committed post-production team ensures you a polished product.</p>
+        </div>
+        <div class="svc-card">
+          <img src="assets/images/site/icon-art-department.png" alt="Art department icon" loading="lazy">
+          <h3>Art Department</h3>
+          <p>Our Art Department is experienced in set design, prop creation, and visual elements. We focus on crafting settings that genuinely complement the essence of your project.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="collab-band">
+    <img src="assets/images/site/collaborate-band.jpg" alt="" loading="lazy">
+    <div class="container">
+      <div class="collab-faq">
+        <span class="hint">Have more Questions? Visit:</span>
+        <a href="faq.html">FAQ</a>
+      </div>
+      <div class="collab-copy">
+        <h2>We collaborate with a diverse range of clients, from established agencies and organizations to emerging talents and startups.</h2>
+        <div class="collab-actions">
+          <a href="mailto:info@TheIndigoRepublic.com?subject=Website%20Inquiry" class="btn-wix-orange">Hire Us</a>
+          <a href="video.html" class="btn-wix-outline">View Work</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="page-footer">&copy; <span id="year"></span> by Indigo Republic Films</footer>
+
+</main>
+
+<div id="preview-card"><div class="art"></div><div class="label"></div></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

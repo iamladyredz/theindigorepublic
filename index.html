@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Indigo Republic — Production &amp; Post</title>
+<meta name="description" content="The Indigo Republic — production, photography, and post, carried from first idea to final delivery by one team.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230a0a0f'/%3E%3Ctext x='50' y='68' font-size='60' text-anchor='middle' fill='%23ff6a1a' font-family='Arial'%3EI%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=League+Gothic:wght@400;700&family=Oswald:wght@400;500;600;700&family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css?v=4">
+<style>
+  .sr-only{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;}
+
+  /* ---------- real hero video band ---------- */
+  .real-hero{position:relative; height:clamp(420px,62vh,640px); overflow:hidden; background:#0a0a0a;}
+  .real-hero-video{position:absolute; inset:0; width:100%; height:100%; object-fit:cover;}
+  .real-hero-scrim{position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.55));}
+  .real-hero-content{position:relative; z-index:1; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center;}
+  .real-hero-eyebrow{color:#f5f4f2; font-size:13px; letter-spacing:.14em; text-transform:uppercase; margin-bottom:20px;}
+  .real-hero-content h1{font-family:var(--font-hero); font-weight:400; line-height:1.05; color:#fff; font-size:clamp(34px, 6.4vw, 69px); max-width:14ch; margin:0 0 32px; text-wrap:balance;}
+  .real-hero-actions{display:flex; gap:14px; flex-wrap:wrap; justify-content:center;}
+  /* ---------- services (real) ---------- */
+  .services-top{display:grid; grid-template-columns:1fr 1.15fr; gap:40px; align-items:start;}
+  @media (max-width:860px){ .services-top{grid-template-columns:1fr; gap:36px;} }
+  .services-headline{font-size:clamp(30px,3.6vw,45px); line-height:1.1; font-weight:500; margin-bottom:28px; max-width:600px;}
+  .services-real-intro{max-width:640px; margin:0 0 20px; font-size:15px; line-height:1.4; color:var(--muted);}
+
+  .services-top-video{display:flex; justify-content:center;}
+  .blob-video{
+    width:100%; max-width:460px; aspect-ratio:520/437; object-fit:cover; display:block;
+    -webkit-mask:url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg' viewBox='25 35.5 150 129'%3E%3Cpath d='M60.737 49.182c8.275-.674 16.937 1.138 26.609.273 15.963-1.427 31.182-7.908 46.56-12.017 6.51-1.74 13.434-2.768 19.956-1.072 8.065 2.097 12.642 8.203 15.303 15.732 7.508 21.244 6.428 37.716 4.132 60.133-1.29 12.597-5.185 27.884-18.721 32.255-10.643 3.437-22.453-.292-33.448 1.681-19.478 3.496-40.779 23.034-61.08 17.279-40.197-11.397-45.26-80.282-18.052-105.9 6.208-5.845 12.36-7.844 18.741-8.364z'/%3E%3C/svg%3E") 0% 0%/100% 100% no-repeat;
+    mask:url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg' viewBox='25 35.5 150 129'%3E%3Cpath d='M60.737 49.182c8.275-.674 16.937 1.138 26.609.273 15.963-1.427 31.182-7.908 46.56-12.017 6.51-1.74 13.434-2.768 19.956-1.072 8.065 2.097 12.642 8.203 15.303 15.732 7.508 21.244 6.428 37.716 4.132 60.133-1.29 12.597-5.185 27.884-18.721 32.255-10.643 3.437-22.453-.292-33.448 1.681-19.478 3.496-40.779 23.034-61.08 17.279-40.197-11.397-45.26-80.282-18.052-105.9 6.208-5.845 12.36-7.844 18.741-8.364z'/%3E%3C/svg%3E") 0% 0%/100% 100% no-repeat;
+  }
+
+  .services-cards-row{display:flex; flex-wrap:wrap; align-items:center; gap:40px; margin-top:52px;}
+  .service-real-card{text-align:left; display:block; text-decoration:none; color:inherit; flex:1 1 200px; min-width:180px;}
+  .service-real-card img{width:50px; height:50px; margin:0 0 18px; object-fit:contain;}
+  .service-real-card h3{font-size:20px; font-weight:500; margin-bottom:10px;}
+  .service-real-card p{font-size:14px; line-height:1.3; color:var(--muted);}
+  .services-more-btn{flex:0 0 auto; margin-left:auto;}
+  @media (max-width:760px){ .services-more-btn{margin-left:0;} }
+
+  /* ---------- awards ---------- */
+  .awards-strip{margin-top:72px;}
+  .awards-eyebrow{text-align:center; font-family:var(--font-display); font-size:25px; line-height:1.4; font-weight:500; color:var(--ink);}
+  .awards-lede{max-width:640px; margin:14px auto 40px; text-align:center; font-size:14.5px; line-height:1.7; color:var(--muted);}
+  .awards-row{display:flex; flex-wrap:wrap; gap:28px; justify-content:center; align-items:center;}
+  .awards-row img{height:72px; width:auto; object-fit:contain; filter:brightness(0); opacity:.85;}
+
+  /* ---------- film slate ---------- */
+  .film-slate-heading{font-size:clamp(30px,4.6vw,50px); font-weight:500; line-height:1.1;}
+  .film-slate-heading span{font-size:.68em;}
+  .film-strip{margin-top:48px; display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
+  .film-strip img{width:100%; aspect-ratio:2/3; object-fit:cover; display:block;}
+  @media (max-width:640px){.film-strip{grid-template-columns:1fr; max-width:320px; margin-inline:auto;}}
+
+  /* full-bleed crossfade hero slides between film cards */
+  .film-hero{position:relative; height:clamp(340px,52vw,560px); overflow:hidden; background:var(--dark);}
+  .film-hero img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; will-change:opacity;}
+  .film-hero .scrim{position:absolute; inset:0; background:linear-gradient(0deg, oklch(0 0 0/55%), oklch(0 0 0/10%) 45%);}
+  .film-hero-copy{position:absolute; top:50%; left:0; right:0; transform:translateY(-50%); z-index:2; padding:0 var(--pad);}
+  .film-hero-copy .inner{max-width:var(--container); margin:0 auto;}
+  .film-hero-eyebrow{display:block; font-family:var(--font-kicker); font-weight:700; font-size:clamp(13px,1.4vw,16px); letter-spacing:.02em; text-transform:uppercase; color:#fff868; margin-bottom:12px; text-shadow:0 2px 10px rgba(0,0,0,.5);}
+  .film-hero-watch{display:block; font-family:var(--font-film); color:#fff868; font-size:clamp(14px,1.9vw,24px); letter-spacing:.04em; text-transform:uppercase; font-weight:400; margin-bottom:2px; text-shadow:0 2px 10px rgba(0,0,0,.5);}
+  .film-hero-title{display:flex; align-items:center; gap:18px; color:#fff; text-decoration:none; font-family:var(--font-display); font-weight:500; font-size:clamp(44px,6.4vw,92px); line-height:1; text-shadow:0 6px 28px rgba(0,0,0,.55);}
+  a.film-hero-title:hover{text-decoration:underline;}
+  .film-hero-bundles .film-hero-title{font-family:var(--font-film);}
+  .film-hero-title .play-ring{width:.55em; height:.55em; font-size:1em; border:2px solid #fff; border-radius:50%; display:flex; align-items:center; justify-content:center; flex:none;}
+  .film-hero-title .play-ring svg{width:38%; height:38%; fill:#fff;}
+  .film-hero-rule{width:64px; height:3px; background:var(--accent); margin:20px 0;}
+  .film-hero-rating{display:inline-flex; align-items:center; gap:10px; font-size:13px; color:#fff; background:oklch(0 0 0/45%); padding:6px 12px; border-radius:4px;}
+  .film-hero-rating .stars{color:#f4c430; letter-spacing:1px;}
+  .film-hero-soon{font-family:var(--font-mono); letter-spacing:.04em; font-size:clamp(16px,1.8vw,21px); color:oklch(1 0 0/85%);}
+  .film-hero-serif .film-hero-title, .film-hero-serif .film-hero-soon{font-family:'Palatino Linotype', Palatino, Georgia, serif; font-weight:400;}
+
+  /* Each image's "on" window is wider than its slot (slot = 100%/N) so neighboring
+     windows overlap and genuinely cross-dissolve — no shared all-zero instant, so no
+     flash to the container's background color between stills. */
+  @keyframes heroFade3{0%{opacity:0} 11.5%{opacity:1} 26.5%{opacity:1} 38.5%{opacity:0} 100%{opacity:0}}
+  @keyframes heroFade6{0%{opacity:0} 5.8%{opacity:1} 13.3%{opacity:1} 19.2%{opacity:0} 100%{opacity:0}}
+  @keyframes heroFade9{0%{opacity:0} 3.9%{opacity:1} 8.9%{opacity:1} 12.8%{opacity:0} 100%{opacity:0}}
+  .film-hero-bundles img{animation:heroFade3 21s ease-in-out infinite;}
+  .film-hero-bundles img:nth-child(1){animation-delay:0s;}
+  .film-hero-bundles img:nth-child(2){animation-delay:-7s;}
+  .film-hero-bundles img:nth-child(3){animation-delay:-14s;}
+  .film-hero-seeds img{animation:heroFade6 36s ease-in-out infinite;}
+  .film-hero-seeds img:nth-child(1){animation-delay:0s;}
+  .film-hero-seeds img:nth-child(2){animation-delay:-6s;}
+  .film-hero-seeds img:nth-child(3){animation-delay:-12s;}
+  .film-hero-seeds img:nth-child(4){animation-delay:-18s;}
+  .film-hero-seeds img:nth-child(5){animation-delay:-24s;}
+  .film-hero-seeds img:nth-child(6){animation-delay:-30s;}
+  .film-hero-nubru img{animation:heroFade9 54s ease-in-out infinite;}
+  .film-hero-nubru img:nth-child(1){animation-delay:0s;}
+  .film-hero-nubru img:nth-child(2){animation-delay:-6s;}
+  .film-hero-nubru img:nth-child(3){animation-delay:-12s;}
+  .film-hero-nubru img:nth-child(4){animation-delay:-18s;}
+  .film-hero-nubru img:nth-child(5){animation-delay:-24s;}
+  .film-hero-nubru img:nth-child(6){animation-delay:-30s;}
+  .film-hero-nubru img:nth-child(7){animation-delay:-36s;}
+  .film-hero-nubru img:nth-child(8){animation-delay:-42s;}
+  .film-hero-nubru img:nth-child(9){animation-delay:-48s;}
+
+  /* detail cards (white) */
+  .film-detail{padding:70px 0;}
+  .film-detail .container{display:grid; grid-template-columns:280px 1fr; gap:48px; align-items:start;}
+  @media (max-width:640px){.film-detail .container{grid-template-columns:1fr; text-align:center;}}
+  .film-detail img.poster{width:100%; aspect-ratio:2/3; object-fit:cover;}
+  .film-detail-watch{display:flex; align-items:center; gap:12px; font-family:var(--font-film); font-size:clamp(20px,2.7vw,38px); font-weight:400; text-transform:uppercase; margin-bottom:0;}
+  .film-detail-watch .play-ring{width:.7em; height:.7em; border:2px solid var(--ink); border-radius:50%; display:flex; align-items:center; justify-content:center; flex:none;}
+  .film-detail-watch .play-ring svg{width:38%; height:38%; fill:var(--ink);}
+  .film-detail h3{font-size:clamp(42px,6.8vw,81px); font-weight:500; line-height:1; margin-bottom:14px;}
+  .film-detail h3 a{color:inherit; text-decoration:none;}
+  .film-detail h3 a:hover{text-decoration:underline;}
+  .film-streamers a{line-height:0;}
+  .film-detail-bundles h3, .film-detail-bundles .film-detail-watch{font-family:var(--font-film); font-weight:400;}
+  .film-detail .kicker{font-family:var(--font-kicker); font-size:16px; letter-spacing:.02em; text-transform:uppercase; color:var(--ink); font-weight:700; display:block; margin-bottom:16px;}
+  .film-detail p.logline{font-family:var(--font-body); font-size:16px; line-height:1.4; color:var(--muted); max-width:42ch; margin-bottom:22px;}
+  @media (max-width:640px){.film-detail p.logline{margin-inline:auto;}}
+  .film-streamers{display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:12px; color:var(--muted);}
+  @media (max-width:640px){.film-streamers{justify-content:center;}}
+  .film-streamers img{height:18px; width:auto; object-fit:contain;}
+  .film-detail-embed{margin-top:18px; max-width:420px; border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow-soft);}
+  @media (max-width:640px){.film-detail-embed{margin-inline:auto;}}
+  .film-detail-embed img{width:100%; display:block;}
+
+  /* ---------- about (real) ---------- */
+  .about-real-grid{display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center;}
+  .about-real-collage{position:relative; min-height:460px;}
+  .about-photo-1{position:absolute; top:0; left:0; width:58%; aspect-ratio:4/3; object-fit:cover; z-index:1; box-shadow:var(--shadow-soft);}
+  .about-photo-2{position:absolute; bottom:0; left:0; width:52%; aspect-ratio:4/3; object-fit:cover; z-index:1; box-shadow:var(--shadow-soft);}
+  .about-hi-bubble{
+    position:absolute; top:14%; right:4%; width:46%; aspect-ratio:1;
+    background:var(--dark); color:#fff; border-radius:50% 50% 50% 6%;
+    display:flex; align-items:center; justify-content:center; z-index:2;
+    font-family:var(--font-display); font-weight:400; font-size:clamp(46px,7vw,86px);
+  }
+  .about-real-copy .eyebrow{color:var(--accent);}
+  .about-real-copy p{font-size:14.5px; line-height:1.75; color:var(--muted); margin-bottom:18px;}
+  @media (max-width:860px){.about-real-grid{grid-template-columns:1fr; gap:60px;} .about-real-collage{min-height:380px;}}
+
+  /* ---------- shop teaser ---------- */
+  .shop-teaser-grid{display:grid; grid-template-columns:1.4fr 1fr; gap:40px; align-items:center;}
+  .shop-teaser-grid img{width:100%; display:block;}
+  .shop-teaser-line{font-size:18px; margin-bottom:22px;}
+  .shop-teaser-store{font-size:clamp(28px,4vw,40px); margin-bottom:4px;}
+  .shop-teaser-shop{font-size:clamp(34px,5vw,50px); color:oklch(0.88 0 0); letter-spacing:.02em; margin-bottom:20px;}
+  .btn-shop{
+    display:inline-flex; align-items:center; gap:8px; background:#8a8c52; color:#fff;
+    font-weight:700; font-size:14px; padding:14px 34px; border-radius:4px; text-decoration:none;
+    transition:transform .25s var(--ease), box-shadow .25s var(--ease);
+  }
+  .btn-shop:hover{transform:translateY(-2px);}
+  @media (max-width:760px){.shop-teaser-grid{grid-template-columns:1fr; text-align:center;}}
+
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="bar">
+    <a href="index.html" class="wordmark">The Indigo<span class="dot">.</span>Republic</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="video.html">Video</a></li>
+        <li><a href="photography.html">Photography</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="header-cta">Let's talk</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+
+  <section class="real-hero">
+    <video class="real-hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/images/site/hero-bg-poster.jpg">
+      <source src="assets/video/hero-bg.mp4" type="video/mp4">
+    </video>
+    <div class="real-hero-scrim"></div>
+    <div class="real-hero-content container">
+      <p class="real-hero-eyebrow">Video Production &middot; Live Streaming &middot; Photography</p>
+      <h1>Empowering Your Story Through Dynamic Visuals.</h1>
+      <div class="real-hero-actions">
+        <a href="mailto:info@TheIndigoRepublic.com?subject=Customer%20Inquiry" class="btn-wix-orange">Hire Us</a>
+        <a href="#services-real" class="btn-wix-outline">Services</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-light services-real" id="services-real">
+    <div class="container">
+      <div class="services-top">
+        <div class="services-top-copy">
+          <h2 class="services-headline">Content isn't King,<br>it's the Kingdom.</h2>
+          <p class="services-real-intro">Videos act as the castle walls projecting your brand's message to vast audiences. This isn't just a poetic metaphor; it's a business imperative.</p>
+          <p class="services-real-intro">By not incorporating video marketing, you're essentially leaving money on the table. Videos offer a compelling medium to engage your audience, simplify complex ideas, and forge emotional bonds. At Indigo Republic, we understand the ROI of visual storytelling and are committed to helping you maximize your kingdom's potential.</p>
+        </div>
+        <div class="services-top-video">
+          <video class="blob-video" autoplay muted loop playsinline preload="metadata" poster="assets/images/site/livestream-poster.jpg">
+            <source src="assets/video/livestream.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="services-cards-row">
+        <div class="service-real-card">
+          <img src="assets/images/site/icon-video-production.png" alt="Video production icon" loading="lazy">
+          <h3>Video Production</h3>
+          <p>From music videos to commercials, and from short films to feature-length productions, we cater to all your video needs comprehensively!</p>
+        </div>
+        <div class="service-real-card">
+          <img src="assets/images/site/icon-production-design.png" alt="Weddings and events icon" loading="lazy">
+          <h3>Weddings &amp; Events</h3>
+          <p>Let us capture your special moments. Photography and videography available.</p>
+        </div>
+        <div class="service-real-card">
+          <img src="assets/images/site/icon-livestream.png" alt="Live streaming icon" loading="lazy">
+          <h3>Live Streaming</h3>
+          <p>Ready to broadcast your event in real time, our live stream team offers customizable one or multi-camera setups to perfectly capture the moment.</p>
+        </div>
+        <a href="services.html" class="btn-wix-orange services-more-btn">More Services</a>
+      </div>
+      <div class="awards-strip">
+        <p class="awards-eyebrow">Award-Winning Film Makers</p>
+        <p class="awards-lede">We're proud to be the home of talented content creators with experience ranging from marketing videos to film and television production.</p>
+        <div class="awards-row">
+        <img src="assets/images/site/award-gothamite-best-supporting-actress.png" alt="Best Supporting Actress — Gothamite Monthly Film Awards" loading="lazy">
+        <img src="assets/images/site/award-platinum.png" alt="Platinum Award" loading="lazy">
+        <img src="assets/images/site/award-ofany-winner.png" alt="OFANY Award Winner" loading="lazy">
+        <img src="assets/images/site/award-la-sun-film-fest.png" alt="Winner, LA Sun Film Fest 2022" loading="lazy">
+        <img src="assets/images/site/award-indiefest.png" alt="Winner, The IndieFEST Film Awards 2021" loading="lazy">
+        <img src="assets/images/site/award-american-golden-picture.png" alt="Winner, American Golden Picture International Film Festival 2022" loading="lazy">
+        <img src="assets/images/site/award-cpiff-drama.png" alt="Drama laurel, CPIFF" loading="lazy">
+        <img src="assets/images/site/award-best-producer.png" alt="Best Producer, Indigo Republic" loading="lazy">
+        <img src="assets/images/site/award-cca-winner.png" alt="CCA Award Winner" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-dark film-slate">
+    <div class="container">
+      <h2 class="film-slate-heading">Our Recent <span>and</span><br>Upcoming Film Projects.</h2>
+      <div class="film-strip">
+        <img src="assets/images/site/film-screaming-poster.jpeg" alt="Screaming poster" loading="lazy">
+        <img src="assets/images/site/film-poorguy-poster.jpeg" alt="Poor Guy poster, directed by Ryan Jordan, starring Justin Meyer, Kristin Michelle Young and Layla Khepri" loading="lazy">
+        <img src="assets/images/site/film-bundles-poster.jpeg" alt="Bundles movie poster" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="film-hero film-hero-bundles">
+    <img src="assets/images/film-heroes/bundles-01.jpg" alt="" loading="lazy">
+    <img src="assets/images/film-heroes/bundles-02.jpg" alt="" loading="lazy">
+    <img src="assets/images/film-heroes/bundles-03.jpg" alt="" loading="lazy">
+    <div class="scrim"></div>
+    <div class="film-hero-copy">
+      <div class="inner">
+        <span class="film-hero-eyebrow">Comedy &middot; Drama &middot; Culture</span>
+        <span class="film-hero-watch">Watch</span>
+        <a class="film-hero-title" href="https://www.amazon.com/gp/video/detail/B0B5VX889M/ref=atv_dp_share_cu_r" target="_blank" rel="noopener">Bundles <span class="play-ring"><svg viewBox="0 0 24 24"><path d="M5 3l16 9-16 9V3z"/></svg></span></a>
+        <div class="film-hero-rule"></div>
+        <div class="film-hero-rating"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#189;</span> 59 &middot; IMDb 8.5 &middot; 1 h 36 min</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-light film-detail film-detail-bundles">
+    <div class="container">
+      <img class="poster" src="assets/images/site/film-bundles-poster.jpeg" alt="Bundles movie poster" loading="lazy">
+      <div>
+        <div class="film-detail-watch">Watch <span class="play-ring"><svg viewBox="0 0 24 24"><path d="M5 3l16 9-16 9V3z"/></svg></span></div>
+        <h3><a href="https://www.amazon.com/gp/video/detail/B0B5VX889M/ref=atv_dp_share_cu_r" target="_blank" rel="noopener">Bundles</a></h3>
+        <span class="kicker">Comedy &middot; Drama &middot; Culture</span>
+        <p class="logline">A school girl's harmless plot for revenge inspires a lucrative business until a group of friends find themselves in a hairy situation.</p>
+        <p class="film-streamers">Now available on cable and:
+          <a href="https://www.bet.com/" target="_blank" rel="noopener"><img src="assets/images/site/logo-bet-her.png" alt="Streaming on BET Her"></a>
+          <a href="https://www.amazon.com/gp/video/detail/B0B5VX889M/ref=atv_dp_share_cu_r" target="_blank" rel="noopener"><img src="assets/images/site/logo-amazon-prime.png" alt="Watch on Amazon Prime Video"></a>
+          <a href="https://tv.apple.com/us/movie/bundles/umc.cmc.2syhb1hqf7hndrghyuvam6fgh?playableId=tvs.sbd.9001%3A1630832283" target="_blank" rel="noopener"><img src="assets/images/site/logo-itunes.jpeg" alt="Watch on iTunes"></a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="film-hero film-hero-seeds">
+    <img src="assets/images/film-heroes/seeds-01.jpg" alt="" loading="lazy">
+    <img src="assets/images/film-heroes/seeds-02.jpg" alt="" loading="lazy">
+    <img src="assets/images/film-heroes/seeds-03.jpg" alt="" loading="lazy">
+    <img src="assets/images/film-heroes/seeds-04.jpg" alt="" loading="lazy">
+    <img src="assets/images/film-heroes/seeds-05.jpg" alt="" loading="lazy">
+    <img src="assets/images/film-heroes/seeds-06.jpg" alt="" loading="lazy">
+    <div class="scrim"></div>
+    <div class="film-hero-copy">
+      <div class="inner">
+        <div class="film-hero-title">Borderline</div>
+        <div class="film-hero-rule"></div>
+        <p class="film-hero-soon">Coming soon.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-light film-detail">
+    <div class="container">
+      <img class="poster" src="assets/images/site/film-screaming-poster.jpeg" alt="Screaming poster" loading="lazy">
+      <div>
+        <div class="film-detail-watch">Watch <span class="play-ring"><svg viewBox="0 0 24 24"><path d="M5 3l16 9-16 9V3z"/></svg></span></div>
+        <h3>Screaming</h3>
+        <span class="kicker">Horror &middot; Short Film</span>
+        <p class="logline">A young woman is terrorized by an unknown caller.</p>
+        <a class="film-detail-embed" href="https://youtu.be/Rpl9FwNMaQE?si=8toLL3aZGj9SusOm" target="_blank" rel="noopener">
+          <img src="https://i.ytimg.com/vi/Rpl9FwNMaQE/maxresdefault.jpg" alt="Watch Screaming on YouTube" loading="lazy">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="film-hero film-hero-nubru film-hero-serif">
+    <img src="assets/images/film-heroes/nubru-01.jpg" alt="" loading="lazy">
+    <img src="assets/images/film-heroes/nubru-02.jpg" alt="" loading="lazy">
+    <img src="assets/images/film-heroes/nubru-03.jpg" alt="" loading="lazy">
+    <img src="assets/images/film-heroes/nubru-04.jpg" alt="" loading="lazy">
+    <img src="assets/images/film-heroes/nubru-05.jpg" alt="" loading="lazy">
+    <img src="assets/images/film-heroes/nubru-06.jpg" alt="" loading="lazy">
+    <img src="assets/images/film-heroes/nubru-07.jpg" alt="" loading="lazy">
+    <img src="assets/images/film-heroes/nubru-08.jpg" alt="" loading="lazy">
+    <img src="assets/images/film-heroes/nubru-09.jpg" alt="" loading="lazy">
+    <div class="scrim"></div>
+    <div class="film-hero-copy">
+      <div class="inner">
+        <div class="film-hero-title">Nu Bru</div>
+        <div class="film-hero-rule"></div>
+        <p class="film-hero-soon">Coming soon.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-light about-real">
+    <div class="container about-real-grid">
+      <div class="about-real-collage">
+        <img class="about-photo-1" src="assets/images/site/photo-brand-photography.jpg" alt="" loading="lazy">
+        <div class="about-hi-bubble">Hi</div>
+        <img class="about-photo-2" src="assets/images/site/photo-red-camera.jpeg" alt="" loading="lazy">
+      </div>
+      <div class="about-real-copy">
+        <h2 class="eyebrow">About Us</h2>
+        <p>Specializing in Film and Video Productions, Project Management, Content Creation, and Marketing, our team is a curated ensemble of talented Creative Directors, Cinematographers, Writers, and Marketing Gurus.</p>
+        <p>Beyond business and film, our expertise shines in capturing the essence of life's special moments, from weddings to live events, all available through high-quality live streaming services. Committed to customer satisfaction, we work closely with you at every step to ensure your needs are not just met, but exceeded. Whether you're a business, an individual, or planning an extraordinary event, we're here to make your dreams a reality. Discover the joy of creativity without limits. Welcome to Indigo Republic.</p>
+        <a href="mailto:info@TheIndigoRepublic.com?subject=Consultation%20Booking" class="btn-wix-orange">Book Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop section hidden for now, per request — restore by uncommenting.
+  <section class="section-light shop-teaser">
+    <div class="container shop-teaser-grid">
+      <img src="assets/images/site/merch-hoodie.png" alt="Indigo Republic merch — hoodie, Indigo Kidz t-shirt, and behind-the-scenes polaroids" loading="lazy">
+      <div>
+        <h2 class="shop-teaser-store">Indigo Store</h2>
+        <p class="shop-teaser-shop">SHOP</p>
+        <p class="shop-teaser-line">I don't know about you, but shopping makes us happy. &#129335;</p>
+        <a href="https://theindigorepublic.bigcartel.com/" target="_blank" rel="noopener" class="btn-shop">Shop</a>
+      </div>
+    </div>
+  </section>
+  -->
+
+  <section class="connect">
+    <div class="connect-wrap">
+      <div class="connect-col connect-title">
+        <span class="dot"></span>
+        <h2>Let's Connect</h2>
+      </div>
+      <div class="connect-col connect-info">
+        <p>Servicing Maryland,<br>Washington, D.C, and Virginia</p>
+        <a href="tel:+12405483771">240-548-3771</a>
+        <a href="mailto:info@TheIndigoRepublic.com">info@TheIndigoRepublic.com</a>
+      </div>
+      <div class="connect-col">
+        <form action="mailto:info@TheIndigoRepublic.com" method="post" enctype="text/plain">
+          <div class="row-2">
+            <div class="field">
+              <label for="h-fname">First Name</label>
+              <input id="h-fname" name="First Name" type="text">
+            </div>
+            <div class="field">
+              <label for="h-lname">Last Name</label>
+              <input id="h-lname" name="Last Name" type="text">
+            </div>
+          </div>
+          <div class="row-2">
+            <div class="field">
+              <label for="h-email">Email*</label>
+              <input id="h-email" name="Email" type="email" required>
+            </div>
+            <div class="field">
+              <label for="h-subject">Subject</label>
+              <input id="h-subject" name="Subject" type="text">
+            </div>
+          </div>
+          <div class="field">
+            <label for="h-message">Leave us a message...</label>
+            <textarea id="h-message" name="Message" rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn-wix-orange">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="preview-card"><div class="art"></div><div class="label"></div></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
